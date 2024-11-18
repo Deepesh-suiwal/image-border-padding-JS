@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task</title>
+</head>
+<style>
+    #box {
+        height: 220px;
+        width: 320px;
+    }
+
+    #box img {
+        height: 100%;
+        width: 100%;
+    }
+
+    .red button {
+        color: #fff;
+        background-color: crimson;
+        padding: 10px;
+        border: 1px solid black;
+        border-radius: 5px;
+    }
+</style>
+
+<body>
+    <div id="box">
+        <img src="https://cdn.pixabay.com/photo/2024/11/15/09/12/landscape-9198927_1280.jpg" alt="" class="img-fluid" id="new">
+        <div class="red">
+            <button onclick="ClickHere()">Click_Here</button>
+        </div>
+    </div>
+    <script>
+        function ClickHere(){
+            let a=document.getElementById("new");
+            a.style="padding:20px;border:10px solid #000"
+        }
+    </script>
+</body>
+
+</html>
